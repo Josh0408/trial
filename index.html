@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Order page</title>
 </head>
 <body>
+    <nav class="nav-bar">
+        <img src="./coffee_masters_logo.png" alt="Coffee masters logo" class="brand-logo">
+        <h1 class="brand-name">Order Page</h1>
+    </nav>
+    <div class="main-page">
+        <div class="order-container">
+            <div class="order f-grow box">
+                <h2>ITEMS</h2>
+                <div class="order-item">
+                    <div>1x</div>
+                    <div>
+                        <div class="item">Cappucino</div>
+                        <ul>
+                            <li>Light Foam</li>
+                        </ul>
+                    </div>
+                    <div class="price">$6.00</div>
+                </div>
+                <div class="order-item">
+                    <div>1x</div>
+                    <div >
+                        <div class="item">Cappucino</div>
+                        <ul>
+                            <li>Almond Milk</li>
+                            <li>Double Espresso Shot</li>
+                        </ul>
+                    </div>
+                    <div class="price">$7.90</div>
+                </div>
+                <div class="order-item">
+                    <div>1x</div>
+                        <div>
+                        <div class="item">Croissant</div>
+                        <ul>
+                            <li>Butter</li>
+                        </ul>
+                        </div>
+                    <div class="price">$5.37</div>
+                </div>
+            
+            </div>
+            <div class="payment f-grow">
+                <div class="name-container box">
+                    <h2>NAME</h2>
+                    <div class="name-box">
+                        <label for="name-input" class="name-label">Name for order</label>
+                        <input id="name-input" name="name" type="text" placeholder="Rohan Maxweighter">
+                    </div>
+                </div>
+                <div class="card-details box">
+                    <h2>PAYMENT</h2>
+                    <div class="card-number">
+                        <label for="number-input">Card number</label>
+                        <input type="text" name="number" id="number-input" placeholder="444 555 666">
+                    </div>
+                    <div class="ccv-box">
+                        <label for="ccv-input">CCV number</label>
+                        <input type="text" name="ccv" id="ccv-input" placeholder="000">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="table-container">
+          <table>
+            <tr>
+                <td class="align-left">Subtotal:</td>
+                <td class="align-right">$19.27</td>
+            </tr>
+            <tr>
+                <td class="align-left">Tax:</td>
+                <td class="align-right">0.96</td>
+            </tr>
+            <tr>
+                <td class="align-left bold">Total:</td>
+                <td class="align-right bold">$20.23</td>
+            </tr>
+          </table>
+        </div>
+        <div class="button-container">
+            <button>Place Order</button>
+        </div>
+    </div>
     
 </body>
 </html>
